@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:tcp://localhost/C:\Users\Sion\Desktop\Files\DB\h2\database
+    username: sa
+    password: '{cipher}94fb9550377ab8d6a47843e66b9ad178ee6107d05a1668e17d1f38d02800a52d'
+
+token:
+  expiration_time: 86400000
+  secret: user_token_native_application
+
+gateway:
+  ip: 192.168.0.1
+
+order_service:
+  url: http://order-service/order-service/%s/orders
